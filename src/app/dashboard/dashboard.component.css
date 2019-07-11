@@ -1,0 +1,73 @@
+#budgetDashboardWapper{
+  padding:2px;
+  display:grid;
+  overflow:scroll;
+  height:90%;
+  grid-template-rows:60% 30% 10%;
+
+}
+
+#mainBudgetSummaryContainer{
+  background-color: white;
+  border-radius:5px;
+  margin:1%;
+  padding:2px;
+  display:flex;
+  flex-direction:column;
+}
+
+#graphicalSummaryContainer{
+
+  background-color:black;
+  color:white;
+  border-radius:5px;
+  align-self:center;
+  justify-self: center;
+  height:100%;
+  padding:2px;
+  width:90%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+#additionalBudgetSummaryContainer{
+  background-color: yellow;
+  border-radius:5px;
+  margin:1%;
+  overflow:auto;
+}
+
+.additionalSummaryContentContainer{
+
+  background-color:orange;
+  border-radius:5px;
+  padding:2px;
+  margin:5px;
+  height:50%;
+
+}
+
+#quickAddButton{
+  position:fixed;
+    bottom:0;
+    right:0;
+    margin-right:1em;
+    margin-bottom:1em;
+    background-color:grey; /*will remove once bootstrap button added*/
+
+}
+
+#carouselControlWrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:5%;
+}
+
+@media(min-width:768px){
+  #budgetDashboardWapper{
+    grid-template-rows:60% 40%;
+    grid-template-columns: 60% 40%;
+  }
+}
