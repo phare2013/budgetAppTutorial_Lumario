@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FamilyBudget';
+  items = [
+    { title: 'Slide 1' },
+    { title: 'Slide 2' },
+    { title: 'Slide 3' },
+  ]
+
+  addSlide() {
+    this.items.push({
+      title: `Slide 4`
+    });
+  }
 }
